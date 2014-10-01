@@ -1,0 +1,14 @@
+{
+  "name": "apiman",
+  "main": "./lib/apiman",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationEvents": ["apiman:toggle"],
+  "repository": "https://github.com/atom/apiman",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

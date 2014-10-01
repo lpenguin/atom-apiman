@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable apiman': 'apiman:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'apiman'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'apiman:toggle' }
+      ]
+    ]
+  }
+]
