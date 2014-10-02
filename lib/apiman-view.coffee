@@ -1,15 +1,15 @@
 {View, ScrollView} = require 'atom'
 TreeView = require './tree-view'
 
-data = [{
-  a: [{
-    b: 'c'
-    d: 'e'
+data = {
+  foo: [{
+    fifr: '1'
+    fufr: '2'
   },{
-    b: 'c'
-    d: 'e'
+    fafr: '3'
+    fofr: '4'
   }]
-}]
+}
 
 
 module.exports =
@@ -30,12 +30,11 @@ class ApimanView extends ScrollView
     @detach()
 
   toggle: ->
-    if @hasParent()
-      @detach()
-    else
-      @append()
+    console.log 'toggle'
+    @append()
 
   append: ->
+    console.log 'append'
     pane = atom.workspaceView.getActivePane()
     pane.addItem this
     @tree.setData data
