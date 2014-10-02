@@ -20,7 +20,7 @@ class NodeView extends HTMLElement
     @appendChild(@entries)
     @entries.classList.add('entries', 'list-tree')
 
-    @name.classList.add('icon-file-directory')
+    # @name.classList.add('icon-file-directory')
     @name.textContent = @node.name
     @name.dataset.name = @node.name
     @name.dataset.path = @node.path
